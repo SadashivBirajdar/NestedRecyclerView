@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="2dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banner+Slider"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_marginBottom="3dp"
+        android:background="@color/TitleBackground"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_title_image"
+        android:src="@drawable/placeholder"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/fragmentHomescreen_topbannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal">
+
+        <emb.com.recyclerviewdemo.view.InfiniteViewPagerWithPageIndicator.InfiniteViewPager
+            android:id="@+id/fragment_homescreen_topSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <emb.com.recyclerviewdemo.view.InfiniteViewPagerWithPageIndicator.InfiniteCirclePageIndicator
+            android:id="@+id/fragment_homescreen_topSlider_page_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            app:fillColor="@color/default_circle_indicator_fill_color"
+            app:pageColor="@color/buttonBg"
+            app:radius="4dp"
+            app:strokeColor="@color/default_circle_indicator_stroke_color"
+            app:strokeWidth="0dp" />
+
+
+        <ImageButton
+            android:id="@+id/fragment_homescreen_topSliderLeftArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/left_arrow_banner"/>
+
+        <ImageButton
+            android:id="@+id/fragment_homescreen_topSliderRightArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow_banner"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

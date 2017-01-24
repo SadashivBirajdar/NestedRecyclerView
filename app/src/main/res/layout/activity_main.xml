@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout Vertical"
+            android:id="@+id/rbtnLinearVertical"
+            android:onClick="call"/>
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout Horizontal Reverse"
+            android:id="@+id/rbtnLinearHorizontalReverse"
+            android:onClick="call"/>
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout Horizontal"
+            android:id="@+id/rbtnLinearHorizontal"
+            android:onClick="call"/>
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GridLayout Horizontal"
+            android:id="@+id/rbtnGridHorizontal"
+            android:onClick="call"/>
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GridLayout Vertical"
+            android:id="@+id/rbtnGridVertical"
+            android:onClick="call"/>
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StaggeredLayout Vertical"
+            android:id="@+id/rbtnStaggeredVertical"
+            android:onClick="call"/>
+
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

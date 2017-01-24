@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/data/EMBITEL/emb-sadabir/AndroidStudioProjects/RecyclerViewDemo/library/build/intermediates/res/merged/debug/color/vpi__light_theme.xml",
+        "source": "/data/EMBITEL/emb-sadabir/AndroidStudioProjects/RecyclerViewDemo/library/src/main/res/color/vpi__light_theme.xml"
+    },
+    {
+        "merged": "/data/EMBITEL/emb-sadabir/AndroidStudioProjects/RecyclerViewDemo/library/build/intermediates/res/merged/debug/color/vpi__dark_theme.xml",
+        "source": "/data/EMBITEL/emb-sadabir/AndroidStudioProjects/RecyclerViewDemo/library/src/main/res/color/vpi__dark_theme.xml"
+    }
+]

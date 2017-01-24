@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/HorizontalSlider"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal">
+
+    <emb.com.recyclerviewdemo.view.InfiniteViewPagerWithPageIndicator.InfiniteViewPager
+        android:id="@+id/fragment_homescreen_topSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <emb.com.recyclerviewdemo.view.InfiniteViewPagerWithPageIndicator.InfiniteCirclePageIndicator
+        android:id="@+id/fragment_homescreen_topSlider_page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        app:fillColor="@color/default_circle_indicator_fill_color"
+        app:pageColor="@color/buttonBg"
+        app:radius="4dp"
+        app:strokeColor="@color/default_circle_indicator_stroke_color"
+        app:strokeWidth="0dp" />
+
+</RelativeLayout>

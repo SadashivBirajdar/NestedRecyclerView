@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="2dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shop by Store"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/tv_title"
+        android:background="@color/TitleBackground"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_title_image"
+        android:src="@drawable/placeholder"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:visibility="gone"
+        android:paddingRight="3dp"/>
+
+</LinearLayout>
